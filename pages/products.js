@@ -35,7 +35,7 @@ export default function Products() {
       <table className="mt-2 basic">
         <thead>
           <tr>
-            <td>Product name</td>
+            <td>Product</td>
             <td>Actions</td>
           </tr>
         </thead>
@@ -44,7 +44,10 @@ export default function Products() {
             <tr key={product._id}>
               <td>{product.title}</td>
               <td>
-                <Link className="btn-default" href={"/products/edit/" + product._id}>
+                <Link
+                  className="btn-default"
+                  href={"/products/edit/" + product._id}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -61,7 +64,10 @@ export default function Products() {
                   </svg>
                   Edit
                 </Link>
-                <Link className="btn-red" href={"/products/delete/" + product._id}>
+                <Link
+                  className="btn-red"
+                  href={"/products/delete/" + product._id}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
